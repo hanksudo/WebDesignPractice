@@ -1,0 +1,22 @@
+{
+  "name": "WebDesignPractice",
+  "version": "0.0.0",
+  "homepage": "https://github.com/hanksudo/WebDesignPractice",
+  "authors": [
+    "Hank Wang <drapho@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vibrant": "*",
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.4",
+    "bootstrap-material-design": "~0.3.0"
+  }
+}
