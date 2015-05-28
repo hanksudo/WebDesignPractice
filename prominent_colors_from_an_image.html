@@ -76,7 +76,7 @@ $(function() {
         var $panelBody = $(this).find('.panel-body');
         var $colors = $(this).find('.colors');
         var $img = $(this).find('img');
-        setTimeout(function() {
+        $img.on('load', function() {
             var swatches = new Vibrant($img.get(0)).swatches();
             for (swatch in swatches) {
                 if (swatches.hasOwnProperty(swatch) && swatches[swatch]) {
@@ -90,7 +90,7 @@ $(function() {
                     $colors.append($colorDiv);
                 }
             }
-        }, 10);
+        });
     });
 });
 </script>
