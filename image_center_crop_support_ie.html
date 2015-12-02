@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    .thumbnail {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    }
+    .thumbnail img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+    }
+    .thumbnail img.portrait {
+        width: 100%;
+        height: auto;
+    }
+    .photo {
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin-bottom: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="thumbnail">
+        <img src="https://placeimg.com/576/1000/any">
+    </div>
+    <div class="thumbnail">
+        <img src="https://placeimg.com/576/1000/any" class="portrait">
+    </div>
+    <div class="thumbnail">
+        <img src="https://placeimg.com/1000/576/any">
+    </div>
+    <div class="thumbnail">
+        <img src="https://placeimg.com/1000/576/any" class="portrait">
+    </div>
+    <div class="photo" style="background-image: url('https://placeimg.com/576/1000/any');">
+    </div>
+    <div class="photo" style="background-image: url('https://placeimg.com/1000/576/any');">
+    </div>
+
+</body>
+</html>
